@@ -9,7 +9,7 @@
 </head>
 <body>
     @foreach($articles as $article)
-                    <h5 class="card-title">{{ $article->title }}</h5>
+                    <h5>{{ $article->title }}</h5>
         @endforeach
 </body>
 </html>
