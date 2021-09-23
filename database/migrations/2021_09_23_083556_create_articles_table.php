@@ -18,6 +18,8 @@ class CreateArticlesTable extends Migration
             $table->string('title',250);
             $table->text('cover');
             $table->text('description');
+            $table->unsignedBigInteger('author_id');
+            $table->foreign('author_id')->references('id')->on('authors');
             $table->timestamps();
         });
     }
